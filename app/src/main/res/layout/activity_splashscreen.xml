@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".splashscreen"
     android:gravity="center"
-    android:background="@color/black"
+    android:background="@color/light_blue"
     android:orientation="vertical">
 <!--    <ImageView-->
 <!--        android:id="@+id/splashtext"-->

@@ -47,12 +47,12 @@ class MainActivity : AppCompatActivity() {
             player=1-player
             boardstatus[x][y]=0
         }
-        if(!checkIfThereIsAWinner(boardstatus,boardButtons,player,binding.msgtext)){
+        if(!checkIfThereIsAWinner(boardstatus)){
             changeTurn()
         }
 
     }
-    fun checkIfThereIsAWinner(boardstates: Array<IntArray>, board: Array<Array<ImageButton>>, Player: Int, msgtext: TextView): Boolean{
+    fun checkIfThereIsAWinner(boardstates: Array<IntArray>): Boolean{
         // different scarios of sccuess
         if(boardstates[0][0]==boardstates[0][1] && boardstates[0][1]==boardstates[0][2] && boardstates[0][0]!=-1){
             freezeButtons()
