@@ -1,16 +1,21 @@
-package com.ayush.tictactoe
+package com.project.tictactoe
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageButton
-import android.widget.TextView
-import com.ayush.tictactoe.databinding.ActivityMainBinding
+<<<<<<< HEAD:app/src/main/java/com/yogev/tictactoe/MainActivity.kt
+import com.yogev.tictactoe.databinding.ActivityMainBinding
+=======
+import com.project.tictactoe.databinding.ActivityMainBinding
+import java.util.*
+>>>>>>> ec5fd26 (X O):app/src/main/java/com/project/tictactoe/MainActivity.kt
 
 class MainActivity : AppCompatActivity() {
-    var player=1
+
     private lateinit var binding: ActivityMainBinding
     val boardstatus = Array(3){IntArray(3) {-1} }
     var boardButtons = emptyArray<Array<ImageButton>>();
+    var player=1
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -39,11 +44,11 @@ class MainActivity : AppCompatActivity() {
     }
     fun onPress(x: Int,y: Int){
         boardButtons[x][y].isEnabled=false
-        if(player==1){boardButtons[x][y].setImageResource(R.drawable.tilex)
+        if(player==1){boardButtons[x][y].setImageResource(R.drawable.boxx)
             player=1-player
             boardstatus[x][y]=1}
         else{
-            boardButtons[x][y].setImageResource(R.drawable.tileo)
+            boardButtons[x][y].setImageResource(R.drawable.boxo)
             player=1-player
             boardstatus[x][y]=0
         }
@@ -123,7 +128,7 @@ class MainActivity : AppCompatActivity() {
             for (j in 0 until 3 step 1){
                 boardstatus[i][j]=-1
                 boardButtons[i][j].isEnabled=true
-                boardButtons[i][j].setImageResource(R.drawable.tileempty)
+                boardButtons[i][j].setImageResource(R.drawable.boxempty)
             }
         }
     }

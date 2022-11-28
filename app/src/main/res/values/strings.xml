@@ -1,8 +1,8 @@
 <resources>
-    <string name="app_name">TicTacToe Yogev\'s Game</string>
+    <string name="app_name">TicTacToe Yogev\'s Guy\'s Game</string>
     <string name="playerXTurn">Player X\'s turn</string>
     <string name="reset">RESET</string>
-    <string name="ImgViwDesc">TicTacToe Yogev\'s Game</string>
+    <string name="ImgViwDesc">TicTacToe Yogev\'s Guy\'s Game</string>
     <string name="splash_img">splash img</string>
     <string name="start_game">Start Game</string>
     <string name="r3c1">3rd row, 1st column of game table layout</string>

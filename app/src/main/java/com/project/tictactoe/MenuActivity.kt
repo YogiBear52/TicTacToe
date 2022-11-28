@@ -1,9 +1,9 @@
-package com.ayush.tictactoe
+package com.project.tictactoe
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.ayush.tictactoe.databinding.ActivityMenuBinding
+import com.project.tictactoe.databinding.ActivityMenuBinding
 
 class MenuActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMenuBinding

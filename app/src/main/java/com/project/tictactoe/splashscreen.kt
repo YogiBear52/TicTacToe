@@ -1,4 +1,4 @@
-package com.ayush.tictactoe
+package com.project.tictactoe
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
